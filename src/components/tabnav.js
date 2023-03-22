@@ -1,7 +1,7 @@
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import Beranda from "../pages/beranda";
 import Profil from "../pages/profil";
-import AntDesign from "react-native-vector-icons/AntDesign";
+import AntDesign from "react-native-vector-icons/Feather";
 import { Hasil } from "../pages/hasil";
 
 const Tab = createMaterialBottomTabNavigator();
@@ -21,7 +21,7 @@ export default function NavTabs() {
           } else if (route.name === "Profil") {
             iconName = "user";
           } else if (route.name === "Hasil") {
-            iconName = "book";
+            iconName = "link";
           }
           return <AntDesign name={iconName} color={color} size={26} />;
         },
